@@ -5,12 +5,14 @@ import {RiDeleteBin2Line} from 'react-icons/ri';
 
 const DestinationList = () => {
 
-  console.log(journeyData)
+  console.log(journeyData.length)
   return (
     <Container className="p-2">
       <h3 className="display-6 mb-2" style={{ color: "rgb(166, 18, 189)" }}>
         Destination List
       </h3>
+
+    {journeyData.length<1 && <img src="./img/turkeylogo.png" width="100%"/>}
       
     {journeyData.map(({id,visitor,day,visited,city})=>(
       <div key={id} className= {visited ? "journey visited" : "journey"}>

@@ -36,11 +36,11 @@
 
 
 .visited {
-  border-left: 1rem solid rgb(166, 18, 189);
+  border-left: 1rem solid rgb(55, 184, 207);
 }
 .visited::after {
   content: "VISITED";
-  background-color: rgb(166, 18, 189);
+  background-color: rgb(55, 184, 207);
   color: white;
   font-size: 2rem;
   border-radius: 1rem;

@@ -1,25 +1,25 @@
 export const journeyData = [
-    {
-      id: 1,
-      visitor: "Barry Vermont",
-      day: new Date().toISOString().slice(0,10),
-      visited: false,
-      city: "Istanbul",
-    },
-    {
-      id: 2,
-      visitor: "Harry Coming",
-      day: new Date().toISOString().slice(0,10),
-      visited: false,
-      city: "Ankara",
-    },
-    {
-      id: 3,
-      visitor: "Aaron Black",
-      day: new Date().toISOString().slice(0,10),
-      visited: true,
-      city: "Mardin",
-    },
+  {
+    id: 1,
+    visitor: "Barry Vermont",
+    day: new Date().toISOString().slice(0,10),
+    visited: false,
+    city: "Istanbul",
+  },
+  {
+    id: 2,
+    visitor: "Harry Coming",
+    day: new Date().toISOString().slice(0,10),
+    visited: false,
+    city: "Ankara",
+  },
+  {
+    id: 3,
+    visitor: "Aaron Black",
+    day: new Date().toISOString().slice(0,10),
+    visited: true,
+    city: "Mardin",
+  },
   ]
 
 
