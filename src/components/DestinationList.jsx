@@ -9,7 +9,7 @@ const handleDelete=(id)=>{
  }
 
  const handleDoubleClick = (id) =>{
-  setDestinations(destinations.map((item)=>item.id === id ? {...item, consulted: !item.consulted}:item))
+  setDestinations(destinations.map((item)=>item.id === id ? {...item, visited:!item.visited}:item))
 }
 
 

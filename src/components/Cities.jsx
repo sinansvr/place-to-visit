@@ -22,10 +22,11 @@ const Cities = ({cities,setDestinations,destinations}) => {
 
   return (
     <Container className="p-2">
-      <input onChange={handleChange} type="text" className="form-control" placeholder="Search destination..." />
-      <h3 className="display-6 my-5 title" >
+      <input onChange={handleChange} type="text" className="form-control" placeholder="Search a destination place..." />
+      <h3 className="display-6 mt-5 title" >
         Journey Destinations
       </h3>
+      <h6 className=" mb-5">Where would you like to visit in Turkey?</h6>
 
       <Row className="justify-content-center">
       {
