@@ -1,6 +1,21 @@
 /*? Global Stlye for App */
 *{
  font-family: 'Pangolin', cursive;;
+ 
+ }
+
+.title{
+  color: linear-gradient(270deg, rgb(34, 64, 216) 0%, rgb(41, 226, 242) 100%)!important;
+ 
+}
+
+body{
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("https://w.wallha.com/ws/8/01E5upy6.jpg");
+  
 }
 .city-img {
   transition: transform 0.5s;

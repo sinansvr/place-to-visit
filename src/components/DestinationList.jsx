@@ -4,21 +4,22 @@ import {RiDeleteBin2Line} from 'react-icons/ri';
 
 const DestinationList = ({destinations, setDestinations}) => {
 
-  const handleDelete=(id)=>{
+const handleDelete=(id)=>{
     setDestinations(destinations.filter((item)=>item.id !==id))
-
  }
 
  const handleDoubleClick = (id) =>{
-  setDestinations(destinations.map((item)=>item.id == id ? {...item, consulted: !item.consulted}:item))
+  setDestinations(destinations.map((item)=>item.id === id ? {...item, consulted: !item.consulted}:item))
 }
+
+
   return (
     <Container className="p-2">
-      <h3 className="display-6 mb-2" style={{ color: "rgb(166, 18, 189)" }}>
+      <h3 className="display-6 my-4 title">
         Destination List
       </h3>
 
-    {destinations.length<1 && <img src="./img/turkeylogo.png" width="100%" alt="img"/>}
+    {destinations.length<1 && <img src="./img/3.png" width="70%" style={{opacity:"1"}} alt="img"/>}
       
     {destinations.map(({id,visitor,day,visited,city})=>(
       <div key={id} className= {visited ? "journey visited" : "journey"}

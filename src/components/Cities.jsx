@@ -22,9 +22,9 @@ const Cities = ({cities,setDestinations,destinations}) => {
 
   return (
     <Container className="p-2">
-      <input onChange={handleChange} type="text" className="form-control" placeholder="Search city in Türkiye..." />
-      <h3 className="display-6 mb-3" style={{ color: "rgb(166, 18, 189)" }}>
-        Our Cities
+      <input onChange={handleChange} type="text" className="form-control" placeholder="Search destination..." />
+      <h3 className="display-6 my-5 title" >
+        Journey Destinations
       </h3>
 
       <Row className="justify-content-center">

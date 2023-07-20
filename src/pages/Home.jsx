@@ -11,7 +11,7 @@ const Home = () => {
     <main className="text-center mt-2">
       
       <img src="./img/bannerlogo.png" alt="türkiye banner" width={"25%"}/>
-      <h1 className="display-5 text-danger">VISIT TURKIYE</h1>
+      
       <Cities cities={cities} destinations={destinations} setDestinations={setDestinations} />
       <DestinationList destinations={destinations} setDestinations={setDestinations} />
     </main>
