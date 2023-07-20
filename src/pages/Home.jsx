@@ -1,15 +1,19 @@
 import DestinationList from "../components/DestinationList"
 import Cities from "../components/Cities"
-import { cities } from "../helper/cityData"
+import { cities, journeyData } from "../helper/cityData"
+import { useState } from "react"
 
 const Home = () => {
+
+  const [destinations, setDestinations] = useState(journeyData)
+
   return (
     <main className="text-center mt-2">
       
       <img src="./img/bannerlogo.png" alt="türkiye banner" width={"25%"}/>
       <h1 className="display-5 text-danger">VISIT TURKIYE</h1>
-      <Cities cities={cities}/>
-      <DestinationList />
+      <Cities cities={cities} destinations={destinations} setDestinations={setDestinations} />
+      <DestinationList destinations={destinations} setDestinations={setDestinations} />
     </main>
   )
 }

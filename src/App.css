@@ -1,5 +1,7 @@
 /*? Global Stlye for App */
-
+*{
+ font-family: 'Pangolin', cursive;;
+}
 .city-img {
   transition: transform 0.5s;
   border-radius: 1rem;

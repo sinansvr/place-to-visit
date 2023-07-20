@@ -4,9 +4,10 @@ import Container from "react-bootstrap/Container"
 import { useState } from "react"
 import AddModal from "./AddModal"
 
-const Cities = ({cities}) => {
+const Cities = ({cities,setDestinations,destinations}) => {
   const [search, setSearch] = useState("")
   const [show, setShow] = useState(false);
+  const [cityName,setCityName]=useState("")
 
   const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
@@ -30,14 +31,26 @@ const Cities = ({cities}) => {
       {
         filteredCities.map(({id,cityName,photo,location})=>(
           <Col key={id} xs={6} sm={4} md={3}>
-            <img src={photo} alt={cityName} className="img-thumbnail city-img" onClick={()=>setShow(true)}/>
+            <img 
+            src={photo} 
+            alt={cityName} 
+            className="img-thumbnail city-img" 
+            onClick={()=>{setShow(true)
+            setCityName(cityName)}}/>
+
             <h5>{cityName}</h5>
-          <h6>{location}</h6>
+            <h6>{location}</h6>
 
           </Col>
         ))
       }
-      <AddModal show={show} handleClose={handleClose}/>
+      <AddModal 
+        cityName={cityName} 
+        show={show} 
+        handleClose={handleClose} 
+        cities={cities} 
+        destinations={destinations} 
+        setDestinations={setDestinations}/>
         
       </Row>
     </Container>
