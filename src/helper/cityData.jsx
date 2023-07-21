@@ -80,7 +80,7 @@ export const journeyData = [
   },
   {
     id:7,
-    cityName: 'Pergamon',
+    cityName: 'Bergama',
     population: 'Unknown',
     location: 'Aegean Region',
     historicalImportance: 'Once a powerful ancient Greek city, renowned for its Acropolis.',
@@ -98,7 +98,7 @@ export const journeyData = [
   },
   {
     id:9,
-    cityName: 'Ağrı',
+    cityName: 'Agrı',
     population: '0.6 million',
     location: 'Eastern Anatolia Region',
     historicalImportance: 'Home to Mount Ararat, the highest peak in Turkey.',
